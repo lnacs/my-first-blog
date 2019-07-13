@@ -1,0 +1,45 @@
+{% load static %}
+<html>
+    <head>
+        <title>Django Girls blog</title>
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+        <link href='//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="{% static 'css/blog.css' %}">
+    </head>
+    <body>
+
+
+
+    <div class="page-header">
+    <h1 class='blogtitle'>Interreg Programme Info</h1>
+    </div>
+    <h2>MENÚ</h2>
+    <p>Programa INTERRREG Atlantic Area, información del proyecto</p>
+    <h3>Aspectos generales</h3>
+    <p>Generalidades del programa <em><strong>Atlantic Arc</strong></em>
+    <br>Completar con información desde la web <a href="https://www.atlanticarea.eu/">Atlantic Area</a>
+    </p>
+    <h2>Técnologías KET</h2>
+    <h3>Pesca</h3>
+    <ul>
+      <li>Gestión sostenible de los recursos</li>
+      <li>Aprovechamiento de los recursos</li>
+      <li>Obtención de ingrecientes funcionales</li>
+    </ul>
+    <h3>Acuicultura</h3>
+    <ul>
+      <li>Gestión sostenible de los recursos</li>
+      <li>Aprovechamiento de los recursos</li>
+      <li>Obtención de ingrecientes funcionales</li>
+    </ul>
+    <div class="content container">
+        <div class="row">
+            <div class="col-md-8">
+            {% block content %}
+            {% endblock %}
+            </div>
+        </div>
+    </div>
+</body>
+</html>
